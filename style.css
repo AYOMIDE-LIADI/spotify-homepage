@@ -142,6 +142,7 @@
 .ptag a{
     color: white;
     text-decoration: none;
+    padding: 07px;
 }
 .ptag a:hover{
     border-radius: 20px;
@@ -155,6 +156,7 @@
 }
 .container{
     display: flex;
+    cursor: pointer;
 }
 .special{
     margin-left: 670px;
@@ -174,6 +176,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 
 }
 .move{
@@ -186,23 +189,15 @@
 }
 .containerr{
     cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    height: 250px;
+    width: 250px;
 }
 .move{
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
-}
-.move:hover{
-    background-color: #191919;
-    transition: .5s all;
-}
-.move:hover .firstbackgroundimg{
-    display: block;
-    transition: .5s ease-in-out;
-}
-
-.firstbackgroundimg:hover{
-    scale: 1.1;
 }
 .secondbackgroundimg{
     background-image: url(./images/ab6761610000517402910ae55de68b4efe48b00e.jpg);
@@ -213,12 +208,31 @@
     background-repeat: no-repeat;
     background-size: contain;   
 }
-/* .containerr:hover .secondbackgroundimg{
+.containerr:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+    transition: .5 ease-in-out;
+}
+.containerr:hover .play{
     display: block;
-    transition: .5s ease-in-out;
-    width: 55px;
-    height: 55px;
-} */
+    transition: .5s all;
+}
+.play{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: none;
+    background-image: url(./images/play-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 130px;
+    margin-left: 120px;
+    padding: 25px;
+}
+.play:hover{
+    scale: 1.2;
+}
 .thirdbackgroundimg{
     background-image: url(./images/ab67616100005174b17a2dfb94026f0b6b09d524.jpg);
     height: 170px;
